@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>HUKUM</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : Hukum<br>
+            MOVIE :JAILER
+            
+        </div>
+        <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gB2zKZxESTg?si=CxTl7Hd-733b-3a8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="Hukum"></iframe><br><br>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML="Hukum Tiger Ka Hukum Hukum Tiger Ka Hukum.. Alappara Kelapparom Dha Paaru Da Kalavaram Yeranguna Tha Daaru Da Nelavaram Puriyidha Okkaruda Thalaivaru Kalathula Super Star’u Da Varamora Odachida Set Aanavan Thalamora Kadakura Hit Aanavan Eliyavan Manasula Fit Aanavan Mudivula Jeichida Urithaanavan Nadakkura Nada Puyalam Iche Mudi Odhukkura Style’ah Iche Kannavilla Ithu Real’ah Iche Thala Mudhal Adi Vara Thalaivaru Alappara Thani Thala Pola Bail’ah Iche Ada Nooru’ku Dail’ah Iche Sethukkura Edam Jail’ah Iche Sera Mudhal Thera Vara Thalaivaru Alappara Onn Alumba Paatthavan Ungoppan Whistle’ah Kaettavan Onn Mavanum Peranum Aatam Poda Veppavan Ivan Paera Thooka Naalu Paeru Pattatha Parika Nooru Paeru Kutti Chevutha Etti Paatha Usura Kodukka Kodi Paeru Hukum Tiger Ka Hukum.. Alappara Kelapparom Thalaivaru Nerandharam Nee End Card’u Vaicha Ivva Trend’ah Mathi Vaippa Nee Kuriya Paruch’u Vaicha Ivva Valayil Yeri Nippa Suthi Adikira Lathi Kitta Sikkina Attakathi Ellam Podi Dhaan Kandabadi Nee Kambeduthu Suthuna Uchanthalayila Idi Dhaan Narachiruchinu Morgaikdhe Dhora Kitta Vanthu Dhoraikadhe Sirayila Sikki Tholayadhe Orasara Varayila Unakoru Korayila Thoda Nerungura Mudiyadhe Edhu Izhukudhu Theriyadhe Kulla Narikkidhu Puriyadhe Vidhigala Thirupura Thalaivaru Alappara Onn Alumba Paatthavan Ungoppan Whistle’ah Kaettavan Onn Mavanum Peranum Aatam Poda Veppavan Ivan Paera Thooka Naalu Paeru Pattatha Parika Nooru Paeru Kutti Chevuttha Etti Paatha Usura Kodukka Kodi Paeru Alappara Kelapparom Thalaivaru Nerandharam Alappara Kelapparom Thalaivaru Nerandharam Hukum Tiger Ka Hukum..";
+            }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+    <script src="/js/lang_button.js">
+        
+    </script>
+        
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title> SONG Template</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : Idhazhin Oram<br>
+            Song Name - Idhazhin Oram<br>
+            Movie - 3<br>
+            Singer - Ajesh Ashok & Anirudh
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lZORMUufA_Y?si=-LHuXP-3NVmK8MBb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML=" Idhazhin oru oram sirithaai anbe Nijamaai idhu podhum sirippaai anbe En naadiyai silirka vaithaai En iravellaam velicham thandhaai En aan garvam maranthindru Un munne paniya vaithaai Sollu nee i love you Nee thaan en kurinji poo En kaadhal endrum true Will make sure you never feel go Oh ellaam marathu un pinnaal varuven Nee sammathithaal naan nilavaiyum tharuven Un nizhal tharai padum dhooram nadanthen Antha nodiyai thaan kavidhaiyai varainthen Oh penne en kanne senthene vaa munne En uyirukkul peyarai vaithai En naadiyai silirka vaithaai En iravellaam velicham thandhaai En aan garvam maranthindru Un munne paniya vaithaai Oh penne en kanne senthene vaa munne En uyirukkul peyarai vaithaai Oh penne en kanne senthene vaa munne En uyirukkul peyarai vaithaai Sollu nee i love you Nee than en kurinji poo En kaadhal endrum true Will make sure you never feel go (2)";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

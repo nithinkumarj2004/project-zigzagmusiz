@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title> Sring day</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : Spring Day<br>
+            SONG by BTS
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xEeFrLSkMm8?si=uV-yQWQh9CjK8w_r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML="Bogo shipda Ireoke malhanikka deo Bogo shipda Neohi sajineul bogo isseodo Bogo shipda Neomu yasokhan shigan Naneun uriga mibda Ijen eolgul han beon boneun geotto Himdeureojin uriga Yeogin ontong gyeoul ppuniya Palworedo gyeouri wa Maeumeun shiganeul dallyeogane Hollo nameun seolgukyeolcha Ni son jabgo Jigu bandaepyeonkkaji ga Gyeoureul kkeutnaegopa Geuriumdeuri Eolmana nuncheoreom naeryeoya Geu bomnari olkka Friend Heogongeul tteodoneun Jageun meonjicheoreom Jageun meonjicheoreom Nallineun nuni naramyeon Jogeum deo ppalli nege Daheul su isseul tende Nunkkochi tteoreojyeoyo Tto jogeumsshik meoreojyeoyo Bogo shipda (bogo shipda) Bogo shipda (bogo shipda) Eolmana gidaryeoya Tto myeot bameul deo saewoya Neol boge doelkka (neol boge doelkka) Mannage doelkka (mannage doelkka) Chuun gyeoul kkeuteul jina Dashi bomnari ol ttaekkaji Kkot piul ttaekkaji Geugose jom deo meomulleojwo Meomulleojwo Niga byeonhan geonji (Niga byeonhan geonji) Animyeon naega byeonhan geonji (Naega byeonhan geonji) I sungan heureuneun shiganjocha miwo Uriga byeonhan geoji mwo Moduga geureon geoji mwo Geurae mibda niga Neon tteonatjiman Dan harudo neoreul Ijeun jeogi eopseotji nan Soljikhi bogo shipeunde Iman neoreul jiulge Geuge neol wonmanghagibodan Deol apeunikka Shirin neol bureonae bonda Yeongicheoreom hayan yeongicheoreom Malloneun jiunda haedo Sashil nan ajik neol bonaeji mothaneunde Nunkkochi tteoreojyeoyo Tto jogeumsshik meoreojyeoyo Bogo shipda (bogo shipda) Bogo shipda (bogo shipda) Eolmana gidaryeoya Tto myeot bameul deo saewoya Neol boge doelkka (neol boge doelkka) Mannage doelkka (mannage doelkka) You know it all You're my best friend Achimeun dashi ol geoya Eotteon eodumdo eotteon gyejeoldo Yeongweonhal sun eopseunikka Beotkkochi pinabwayo I gyeouldo kkeuchi nayo Bogo shipda (bogo shipda) Bogo shipda (bogo shipda) Jogeumman gidarimyeon Myeochil bamman deo saeumyeon Mannareo galge (mannareo galge) Derireo galge (derireo galge) Chuun gyeoul kkeuteul jina Dashi bomnari ol ttaekkaji Kkot piul ttaekkaji Geugose jom deo meomulleojwo Meomulleojwo ";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title> BAE</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            
+            Song Title : Bae<br>
+            Album / Movie : Don<br>
+            Composed by Anirudh Ravichander<br>
+            Lyrics - Vignesh Shivan<br>
+            Vocals - Aditya R K<br>
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/w7Fjxf62t8E?si=C83SbkDy10iNK1v6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML=" Bae kannala thittidadhe, Yena bae pazhasellam, Parandu poye poyache. Bae andha sirippa niruthidadhe, Yenna bae ini athu thaan, Maaya velanaayache. Ini naa unna, Yen kannapola paathukka poren, Thunaya kaatha, Antha mazhaya kooda serthukka poren. Unakku ethellaam romba pudikkumnu, Therinjukka poren, Yen bae neethannu oorukku ellaam, Theruvikka poren. Yen bae yen bae neethaane, Enthan anbe neethaane, En bae endraal nee, Ellaathukkum mele neethaane. Yen bae yen bae nethaane, Ethan thenbe neethaane, Munbe munbe vanthe, En bae neethaane. Bae kannala thittidadhe, Yena bae pazhasellam, Parandu poye poyache. Bae andha sirippa niruthidadhe, Yenna bae ini athu thaan, Maaya velanaayache. Ini naa unna, Yen kannapola paathukka poren, Thunaya kaatha, Antha mazhaya kooda serthukka poren. Unakku ethellaam romba pudikkumnu, Therinjukka poren, Yen bae neethannu oorukku ellaam, Theruvikka poren. Thalli nee pona thedi varuvene, Thakka samayathil kaiya tharuvene, Oo akkam pakkama aale illaatti, Pakkam varalaame kanne oru vaatti. Pudhusaa kaadhala, Pazhaki paakkuren nalla neram, Edhukku edanjala, Melkkaanukkula dhooram. Kaadhal chinname, Unna paakkanamnu ketta thaan, Inga kondu vanthene. Yen bae yen bae neethaane, Enthan anbe neethaane, En bae endraal nee, Ellaathukkum mele neethaane. Yen bae yen bae nethaane, Ethan thenbe neethaane, Munbe munbe vanthe, En bae neethaane. Bae kannala thittidadhe, Yena bae pazhasellam, Parandu poye poyache. Bae andha sirippa niruthidadhe, Yenna bae ini athu thaan, Maaya velanaayache. Ini naa unna, Yen kannapola paathukka poren, Thunaya kaatha, Antha mazhaya kooda serthukka poren. Unakku ethellaam romba pudikkumnu, Therinjukka poren, Yen bae neethannu oorukku ellaam, Theruvikka poren. ";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

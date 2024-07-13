@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title> SONG Template</title>
+        <link rel="stylesheet" href="http://localhost/project/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="http://localhost/project/new_search.html">ZIG ZIG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="http://localhost/project/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : <br>
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/syFZfO_wfMQ?si=a075o5KcjZC6y6GN&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        ,
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML=" ";
+         }
+       </script>
+        <script src="http://localhost/project/js/search_value.js">
+        </script>
+        <script src="http://localhost/project/js/lang_button.js"></script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Uppenantha</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            Song Name - Uppenantha<br>
+            Movie - Aarya-2<br>
+            Singer - Devi Sri Prasad and KK<br>
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TIOZUdc0aL8?si=fIX6mxEV6RqvdTgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML="Uppenantha ee premaki guppedantha gunde emito Chepaleni ee hayiki bhashe enduko Thiyyanaina ee badhaki uppuneeru kanta deniko Reppapatu dooranike viraham enduko Oo.. ninnu chuse ee kallaki lokamantha inka enduko Rendu aksharala premaki inni sikshalenduko I love you naa oopiri aagipoyina, I love you naa pranam poyina (2) Uppenantha... Charanam 1: Kanulalokastavu kalalu narikesthavu Seconukosaraina champesthavu Manchula untavu manta peduthuntavu Ventapadi naa manasu masi chesthavu Tesukunte nuvu oopiri posukunta aayuve cheli.. Guchukoku mullamari gundello sarasari I love you naa oopiri aagipoyina, I love you naa pranam poyina Uppenantha... Charanam 2: Chinukule ninu taki merisipotanante Mabbule Pogesi Klacheyyanaa.. Chilakale nee paluku tirigi palikayante Tolakare lekunda paateyanaa Ninnu kori poolu takite narkutanu poola totanee Ninnu chuste aa chotane todesta aa kalanee I love you naa oopiri aagipoyina, I love you naa pranam poyina (2) Uppenantha ee premaki guppedantha gunde emito Cheppaleni ee hayiki Bashe enduko… ";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

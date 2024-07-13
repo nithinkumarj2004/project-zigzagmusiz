@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Love Yourself</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : Love Yourself<br>
+            Song by Justin Bieber<br>
+            Album: Purpose<br>
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oyEuk8j8imI?si=AGNuk0WVUSxHdYgJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML="For all the times that you rained on my parade And all the clubs you get in using my name You think you broke my heart, oh girl for goodness sake You think I'm crying, on my own, well I ain't And I didn't wanna write a song Cause I didn't want anyone thinking I still care I don't but, you still hit my phone up And baby I'll be moving on And I think you should be something I don't wanna hold back Maybe you should know that My mama don't like you and she likes everyone And I never like to admit that I was wrong And I've been so caught up in my job, didn't see what's going on But now I know, I'm better sleeping on my own Cause if you like the way you look that much Oh baby you should go and love yourself And if you think that I'm still holding on to something You should go and love yourself But when you told me that you hated my friends The only problem was with you and not them And every time you told me my opinion was wrong And tried to make me forget where I came from And I didn't wanna write a song Cause I didn't want anyone thinking I still care I don't but, you still hit my phone up Find more lyrics at ※ Mojim.com And baby I'll be moving on and I think you should be something I don't wanna hold back Maybe you should know that My mama don't like you and she likes everyone And I never like to admit that I was wrong And I've been so caught up in my job, didn't see what's going on But now I know, I'm better sleeping on my own Cause if you like the way you look that much Oh baby you should go and love yourself And if you think that I'm still holding on to something You should go and love yourself For all the times that you made me feel small Fell in love, now I fear nothing at all I never felt so low when I was vulnerable Was I a fool to let you break down my walls? Cause if you like the way you look that much Oh baby you should go and love yourself And if you think that I'm still holding on to something You should go and love yourself Cause if you like the way you look that much Oh baby you should go and love yourself And if you think that I'm still holding on to something You should go and love yourself ";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

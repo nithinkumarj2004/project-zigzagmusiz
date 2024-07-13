@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> ZARA ZARA</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : ZARA ZARA <br>
+            Male version cover<br>
+            By JalRaj
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NeXbmEnpSz0?si=08MAH8BQ3-F_0JHT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML=" Tadpaye Mujhe Teri Sabhi Baatein Ek Baar Ay Deewani Jhootha Hi Sahi Pyaar To Kar Main Bhooli Nahin Haseen Mulakaatein Bechain Karke Mujhko Mujhse Yun Na Pher Nazar Roothega Na Mujhse Mere Saathiyan Yeh Vaada Kar Tere Bina Mushkil Hain Jeena Mera Mere Dilbar Zara Zara Behekta Hain Mehekta Hain Aaj To Mera Tan Badan Main Pyaasa Hoon Mujhe Bhar Le Apni Baahon Mein Zara Zara Behekta Hain Mehekta Hain Aaj To Mera Tan Badan Main Pyaasa Hoon Mujhe Bhar Le Apni Baahon Mein Yuhi Baras Baras Kaali Ghata Barse Hum Yaar Bheeg Jaaye Is Chaahat Ki Baarish Mein Teri Khuyli Khuli Lato Ko Suljhaaun Main Apni Ungliyon Se Main To Hoon Isi Khwaayish Mein Sardi Ki Raaton Mein Hum Soye Rahe Ek Chaadar Mein Hum Dono Tanha Ho Na Koi Bhi Rahe Is Ghar Mein Zara Zara Behekta Hain Mehekta Hain Aaj To Mera Tan Badan Main Pyaasi Hoon Mujhe Bhar Le Apni Baahon Mein Zara Zara Behekta Hain Mehekta Hain Aaj To Mera Tan Badan Main Pyaasi Hoon Mujhe Bhar Le Apni Baahon Mein";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

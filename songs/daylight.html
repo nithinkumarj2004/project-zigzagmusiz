@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title> DAYLIGHT</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : DAYLIGHT <br>
+            SONG by David Kushner
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MoN9ql6Yymw?si=5Bxywl7Z6r3gefsj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML="Telling myself I won't go there Oh, but I know that I won't care Tryna wash away all the blood I've spilt This lust is a burden that we both share Two sinners can't atone from a lone prayer Souls tied, intertwined by our pride and guilt There's darkness in the distance From the way that I've been livin' But I know I can't resist it Oh, I love it and I hate it at the same time You and I drink the poison from the same vine Oh, I love it and I hate it at the same time Hidin' all of our sins from the daylight From the daylight, runnin' from the daylight From the daylight, runnin' from the daylight Oh, I love it and I hate it at the same time Tellin' myself it's the last time Can you spare any mercy that you might find If I'm down on my knees again? Deep down, way down, Lord, I try Try to follow your light, but it's night time Please, don't leave me in the end There's darkness in the distance I'm beggin' for forgiveness (ooh) But I know I might resist it, oh Oh, I love it and I hate it at the same time You and I drink the poison from the same vine Oh, I love it and I hate it at the same time Hidin' all of our sins from the daylight From the daylight, runnin' from the daylight From the daylight, runnin' from the daylight Oh, I love it and I hate it at the same time Oh, I love it and I hate it at the same time You and I drink the poison from the same vine Oh, I love it and I hate it at the same time Hidin' all of our sins from the daylight From the daylight, runnin' from the daylight From the daylight, runnin' from the daylight Oh, I love it and I hate it at the same time ";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

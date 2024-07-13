@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title> Night Changes</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : Night Changes<br>
+            Artist : ONE DIRECTION<br>
+            Album: Four<br>
+
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/syFZfO_wfMQ?si=2xS0-jLSoVhqIEM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML=" Going out tonight, changes into something red Her mother doesn't like that kind of dress Everything she never had, she's showing off Driving too fast, Moon is breaking through her hair She's heading for something that she won't forget Having no regrets is all that she really wants We're only getting older, baby And I've been thinking about it lately Does it ever drive you crazy Just how fast the night changes? Everything that you've ever dreamed of Disappearing when you wake up But there's nothing to be afraid of Even when the night changes It will never change me and you Chasing it tonight, doubts are running 'round her head He's waiting, hides behind his cigarette Heart is beating loud and she doesn't want it to stop Moving too fast, Moon is lighting up her skin She's falling, doesn't even know it yet Having no regrets is all that she really wants We're only getting older, baby And I've been thinking about it lately Does it ever drive you crazy Just how fast the night changes? Everything that you've ever dreamed of Disappearing when you wake up But there's nothing to be afraid of Even when the night changes It will never change me and you Ooh, ooh, ooh Ooh, ooh, ooh, ooh, ooh Ooh, ooh, ooh, ooh, ooh, ooh Going out tonight, changes into something red Her mother doesn't like that kind of dress Reminds her of the missing piece of innocence she lost We're only getting older, baby And I've been thinking about it lately Does it ever drive you crazy Just how fast the night changes? Everything that you've ever dreamed of Disappearing when you wake up But there's nothing to be afraid of Even when the night changes It will never change, baby It will never change, baby It will never change me and you";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

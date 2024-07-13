@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>GUNDELLONA</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : GUNDELLONA<br>
+            Music - Leon James<br>
+            Singer - Anirudh Ravichander<br>
+            Lyrics - Kasarla Shyam
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t_aO4EMP-i0?si=wAaa5NMRb2JKw3pS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML="Iduvane Iduvane Kshanam Kooda Ninne Bujjamma Bujjamma Maruvane Maruvane Kalallonu Ninne Bujjamma Bujjamma Godavale Padanule Neetho Godugu Laa Needouthaane Adugule Vesthanamma Neetho Arachethullo Mosthune Gundellonaa Gundellonaa Ninnu Dachesi Goode Katti Guvva Lekka Choosukuntane Gundelonaa Gundelonaa Santhakam Chesi Painoditho Permission’ne Thecchukunnane Gadavane Gadavadhe Nuvve Leni Roje Bujjamma Bujjamma Oduvane Oduvade Neepai Naalo Preme Bujjamma Bujjamma Naa Chinni Bujjamma Naa Kannee Bujjamma Karigina Kaalam Thirigi Thesthaane Nimishamo Guruthe Isthaane Bujjamma Migilina Kathane Kalipi Raasthaane Manakika Dhooram Undoddhe Bujjamma Manasulo Thalichina Chaale Chitikelo Neeke Edhuravuthane Kanulatho Adigi Choode Entho Santhosham Nimpesthane Ne Ne Gundellona Gundellona Ninnu Daachesi Goode Katti Guvva Lekka Choosukuntaane Gundelona Gundelona Santhakam Chesi Painoditho Permission’ne Thecchukunnane Gundelona Gundelona Kottha Range Nimpukunna Gundelona Gundelona Bomma Needhe Geesukunna Iduvane Iduvane Kshanam Kooda Ninne Bujjamma Bujjamma";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

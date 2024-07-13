@@ -1,0 +1,510 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+             
+            .header{
+                margin-top: 30px;
+                width: 100%;
+                height: 120px;
+                background-color:transparent;
+                backdrop-filter: blur(20px);
+                color: white;
+                font-size: 40px;
+                text-align: center;
+                padding-top: 50px;
+                border-radius: 30px;
+                position: absolute;
+                top: 0%;
+                border: solid 0.1px;
+            }
+            
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: "poppins",sans-serif;
+
+            }
+            body{
+                overflow: hidden;
+                height: 100vh;
+                background: linear-gradient(135deg,#8f8c94,#1e1e1f);
+            }
+            form{
+                width: 75vmin;
+                height: 100%;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                top: 50%;
+                left: 50%;
+                padding: 150px 0;
+                margin-top: 30px;
+                text-align: center;
+                font-size: larger;
+            }
+            input[type="text"]{
+                width: 100%;
+                padding: 15px 10px;
+                border:none;
+                border-bottom: 1px solid #645979;
+                outline: none;
+                border-radius: 20px;
+                background-color: white;
+                font-size: 16px;
+                position: relative;
+            }
+            input[type="submit"]
+            {
+                position: absolute;
+                width: 100px;
+                height: 50px;
+                left:100%;
+                top: 200px;
+                border: solid 2px;
+                border-radius: 20px;
+                background-color: transparent;
+                color: white;
+                font-weight: bold;
+                font-size: large;
+            }
+            input[type="submit"]:hover{
+                background-color: #403e44;
+
+            }
+            ul{
+                list-style: none;
+            }
+            .list{
+                width: 100%;
+                background-color: transparent;
+                backdrop-filter: blur(20px);
+                border-radius: 20px;
+                color: white;
+
+            }
+            .list-items{
+                padding: 12px 5px;
+            }
+            .list-items:hover{
+                border-radius: 20px;
+                background-color: rgb(88, 84, 84);
+                color: white;
+            }
+
+            .footer{
+                justify-content: space-around;
+                width: 100%;
+                height: 200px;
+                background-color:transparent;
+                backdrop-filter: blur(50px);
+                position:absolute;
+                bottom: 0%;
+                border-radius: 30px;
+                font-style:italic;
+            }
+            .main_details{
+                margin-top: 25px;
+                margin-left: 50px;
+                font-family: Arial;
+            }
+            img{
+                width: 40px;
+                height: 30px;
+                border-radius: 50px;
+            }
+            label{
+                color: white;
+                font-size: larger;
+            }
+            h1{
+
+                color: white;
+                font-size: larger;
+            }
+            .nithin ,
+            .surya ,
+            .dhanush ,
+            .rupesh
+            {
+                margin-left: 170px;
+                margin-top: 30px;
+            }
+            
+            .content{
+                display:flex;
+            }
+            p{
+                color: white;
+                font-size: small;
+            }
+
+            *{
+              margin: 0;
+              padding:0;
+              box-sizing: border-box;
+            }
+
+            section{
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100vh;
+    /* https://lh3.googleusercontent.com/ka_5IYJDRkXZnbptxq64LPuggGL5FM8gnpJlsuSiOQh4b39kMkiRbVfX8iK8bjMg5SLkdfoix09P60wyFjN2=w681-h614 */
+              background: url("https://i.postimg.cc/c1Q3njM0/bg2.jpg");
+              background-size:cover;
+              animation: animateBg 50s linear infinite;
+            }
+
+                @keyframes animateBg{
+                    0%,100%{
+                        transform: scale(1);
+                    }
+                    50%{
+                        transform: scale(1.2);
+                    }
+                }
+
+            span{
+                position: absolute;
+                top:50%;
+                left:50%;
+                width: 4px;
+                height: 4px;
+                background: #fff;
+                border-radius: 50%;
+                box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+                animation: animate 1s linear infinite;
+            }
+            span::before{
+                content:'';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 300px;
+                height: 1px;
+                background: linear-gradient(90deg,#fff,transparent);
+            }
+            @keyframes animate
+            {
+                0%
+                {
+                    transform: rotate(315deg) translateX(0);
+                    opacity: 1;
+                }
+                70%
+                {
+                    opacity: 1;
+                }
+                100%
+                {
+                    transform: rotate(315deg) translateX(-1000px);
+                    opacity: 0;
+                }
+            }
+            span:nth-child(1){
+                top: 0;
+                right: 0;
+                left: initial;
+                animation-delay: 0s;
+                animation-duration: 2s;
+            }
+            span:nth-child(2){
+                top: 0;
+                right: 80px;
+                left: initial;
+                animation-delay: 0.2s;
+                animation-duration: 3s;
+            }
+            span:nth-child(3){
+                top: 80;
+                right: 0px;
+                left: initial;
+                animation-delay: 0.4s;
+                animation-duration: 2s;
+            }
+            span:nth-child(4){
+                top: 0;
+                right: 180px;
+                left: initial;
+                animation-delay: 0.6s;
+                animation-duration: 2s;
+            }
+            span:nth-child(5){
+                top: 0;
+                right: 400px;
+                left: initial;
+                animation-delay: 0.8s;
+                animation-duration: 2.5s;
+            }
+            span:nth-child(6){
+                top: 0;
+                right: 600px;
+                left: initial;
+                animation-delay: 1s;
+                animation-duration: 3s;
+            }
+            span:nth-child(7){
+                top: 300px;
+                right: 0px;
+                left: initial;
+                animation-delay: 1.2s;
+                animation-duration: 1.75s;
+            }
+            span:nth-child(8){
+                top: 0px;
+                right: 700px;
+                left: initial;
+                animation-delay: 1.4s;
+                animation-duration: 1.25s;
+            }
+            span:nth-child(9){
+                top: 0px;
+                right: 1000px;
+                left: initial;
+                animation-delay: 0.75s;
+                animation-duration: 2.25s;
+            }
+            span:nth-child(9){
+                top: 0px;
+                right: 450px;
+                left: initial;
+                animation-delay: 2.75s;
+                animation-duration: 2.75s;
+            }
+                h3{
+                    color: white;
+                }
+                .lang-button{
+                    margin-top: 10px;
+                    width: 100px;
+                    height: 40px;
+                    background-color: transparent;
+                    border: solid 1px;
+                    color: white;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+                .lang-button:hover{
+                    transition: all 0.4s;
+                    background-color: #00fffc;
+                    box-shadow: 0 0 20px #00fffc, 0 0 30px #00fffc;
+                    color: black;
+                    border: none;
+                }
+                .choose{
+                    padding-top:20px;
+                }
+
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
+
+        <div class="header">
+            ZIG ZAG MUSIZ
+        </div>
+        <form autocomplete="off" method="post" action="redirect.php">
+            <div class="search">
+               <h3> Enter song:</h3><br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            <h1 align="center" class="choose">choose:</h1><br>
+        
+        <form>
+                <button class="lang-button" onclick="{
+                    open_window_eng();
+                }">ENGLISH</button>
+                <button class="lang-button" onclick="{
+                    open_window_tel();
+                }">TELUGU</button>
+                <button class="lang-button" onclick="{
+                    open_window_tam();
+                }">TAMIL</button>
+                <button class="lang-button" onclick="{
+                    open_window_hin();
+                }">HINDI</button>
+                <button class="lang-button" onclick="{
+                    open_window_bts();
+                }">BTS</button>
+            </form>
+        </form>
+        <div class="footer">
+            <div class="main_details">
+            <h1>
+                WEB DEVELOPMENT
+            </h1>
+            <label>DEVELOPERS:</label>
+            </div>
+            
+            <div class="content">
+            <div class="nithin">
+            
+            <img src="https://res.cloudinary.com/dfqc3n2we/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1709451115/IMG_20240303_130035_izwxri.jpg" class="image">
+            <h1>
+                NITHIN KUMAR J
+            </h1>
+            <p>
+                    ROLE: FRONT-END and 
+                    <br>BACK-END DEVELOPER
+            </p>
+        </div>
+        <div class="rupesh">
+            
+            <img src="https://res.cloudinary.com/dfqc3n2we/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1709451115/IMG_20240303_130035_izwxri.jpg" class="image">
+            <h1>
+                RUPESH
+            </h1>
+            <p>
+                ROLE: FRONT-END DEVELOPER
+            </p>
+        </div>
+        <div class="dhanush">
+            
+            <img src="https://res.cloudinary.com/dfqc3n2we/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1709450003/IMG_20240303_103931_etgnix.jpg" class="image">
+            <h1>
+                DHANUSH
+            </h1>
+            <p>
+                ROLE: DESIGNER
+            </p>
+        </div>
+        <div class="surya">
+            
+            <img src="https://res.cloudinary.com/dfqc3n2we/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1709450435/IMG_20240303_124146_csdxws.jpg" class="image">
+            <h1>
+                SURYA
+            </h1>
+            <p>
+                ROLE: TESTER
+            </p>
+        </div>
+    </div>
+        </div>
+
+
+
+
+        
+    </body>
+
+
+
+
+
+    <script>
+        let names = [
+            "katchi sera",
+             "life of pazham",
+             "unakku thaan",
+             "urugi urugi",
+             "thangamey",
+             "adiye",
+             "bae",
+             "hukum",
+             "udhungada sangu",
+             "gundellona",
+            "undiporaadhey",
+            "appudo ipudo",
+            "gaali vaaluga",
+            "ninnila",
+            "pilla ra",
+            "uppenantha",
+            "night changes",
+            "perfect",
+            "summertime sadness",
+            "love yourself",
+            "wanna be yours",
+            "under my influence",
+            "daylight",
+            "love me like you do",
+            "spring day",
+            "magic shop",
+            "butter",
+            "dynamite",
+            "permission to dance",
+            "boy with love",
+            "fire",
+            "husn",
+            "zara zara",
+            "heeriye",
+            "tum hi ho"
+        ];
+        let sortedNames = names.sort();
+        let input = document.getElementById("input");
+        input.addEventListener("keyup",(e) => {
+            removeElements(); 
+            for(let i of sortedNames){
+                
+                if(
+                    i.toLowerCase().startsWith(input.value.toLowerCase()) && input.value !="")
+                    {
+                        let listItem= document.createElement("li");
+                        listItem.classList.add("list-items");
+                        listItem.style.cursor= "pointer";
+                        listItem.setAttribute("onclick","displayNames('" + i + "')");
+
+                        let word = "<b>" + i.substr(0, input.value.lenght) + "</b>";
+                        word = i.substring(input.value.lenght);
+                        listItem.innerHTML= word;
+                        document.querySelector(".list").appendChild(listItem);
+                    }
+            }
+        } );
+        function displayNames(value){
+            input.value = value;
+            console.log(input.value);
+            removeElements();
+        }
+        function removeElements(){
+            let items = document.querySelectorAll(".list-items");
+            items.forEach((item) => {
+                item.remove();
+            });
+        }
+    </script>
+    <script>
+        function open_window_eng()
+        {
+            window.open("lang/english.html");
+            window.close("new_search.html");
+        }
+        function open_window_tel()
+        {
+            window.open("lang/tel.html");
+            window.close("new_search.html");
+        }
+        function open_window_hin()
+        {
+            window.open("lang/hin.html");
+            window.close("new_search.html");
+        }
+        function open_window_tam()
+        {
+            window.open("lang/tam.html");
+            window.close("new_search.html");
+        }
+        function open_window_bts()
+        {
+            window.open("lang/bts.html");
+            window.close("new_search.html");
+        }
+
+    </script>
+</html>

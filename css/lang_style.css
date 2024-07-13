@@ -1,0 +1,31 @@
+
+body{
+    background-color: black;
+}
+.header{
+background-color: rgba(98, 91, 91,0.2);
+backdrop-filter: blur(30px);
+color: rgb(8, 8, 8);
+position: relative;
+top:0%;
+width: 100%;
+margin-top: 30px;
+height: 100px;
+cursor: pointer;
+border-radius: 30px;
+border: solid white 1px;
+
+}
+.list{
+color: white;
+}
+a{
+text-decoration: none;
+color: white;
+font-size: larger;
+cursor: pointer;
+font-style: italic;
+}
+a:hover{
+color: red;
+}

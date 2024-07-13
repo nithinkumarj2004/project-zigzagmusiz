@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>HUSN</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : HUSN<br>
+            SONG by Anuv Jain
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gJLVTKhTnog?si=bDyD5JMIaKtRrLep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML="Dekho, dekho, kaisi baatein yahan ki Hain saath par, hain saath naa bhi Kya itni aasaan hai? Dekho, dekho, jaise mere iraade Waise kahaan tere yahan the Haan, kitni naadan main Mere husn ke ilaawa kabhi dil bhi maang lo Naa Haaye, pal mein main pighal jaaun, haan Ab aisa naa karo ki dil jud na paaye waapis Teri baaton se bikhar jaaun, haan Maana zamana hai diwaana Isliye tune naa jaana Tere liye main kaafi hun Dekho, dekho, yeh zamane se thak kar Aate ho kyun maasoom ban kar? Tere liye main kya hi hun? Phir aate kyu yahan karne aankhon mein ho baarish? Abh aaye tho thehar jaao naa Aur poocho naa zara mere din ke baare mein bhi Bas itne mein sambhal jaaun, haan Haan, ek din kabhi koi Jab bhi padhe kahani Teri Lagta mujhe mere naam ka Zikr kahin bhi hoga nahin Haan, main yahin Meri yeh aankhon mein, aankhon mein toh dekho Dekho, yeh dil ka haal kya Honthon se hota naa byaan Meri yeh aankhon mein, aankhon mein toh dekho Kaisa naseeb hai mera Milke bhi na mujhe mila Meri yeh aankhon mein, aankhon mein toh dekho Teri adhoori si wafa Maangu, main maangu aur naa Meri yeh aankhon mein, aankhon mein toh dekho Dekho, dekho, kaisi kheenchi lakeerein Chahe bhi dil toh bhi naa jeete Main iss daud mein nahi Dekho, dekho, kaisi baatein yahan ki Baatein yahi dekhun jahan bhi Main iss daur se nahin ";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

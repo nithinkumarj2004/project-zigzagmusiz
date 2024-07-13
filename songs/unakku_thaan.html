@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title> Unakku Thaan</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            Song Name : Unakku Thaan<br>
+            Movie : Chithha<br>
+            Music : Santhosh Narayanan<br>
+            Singers : Santhosh Narayanan, Dhvani Kailas<br>
+            Lyrics : Vivek <br>
+            
+            
+        </div>
+        <div class="video">
+           
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/bui3q02NK8Y?si=z8N5FWasZrIt7Wt9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+         <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML=" Amutha Kadal Unakku Thaan Aara Mazhai Unakkuthaan Neenga Nizhal Unakkuthan Nee Kanmani Enakkuthaan Poruthi Po Nee Tholoadu Madiyil Oonjal Aadu En Paarvai Unnodu Un Pommai Kannodu Pesamal Vinodu Naam Mithandhu Povom Kaathoram Adi Aalolam Naan Thanga Maarodu Va Vitudhu Thene Va Ooo Sandhikka Malar Unaku Than Kandikka Mozhi Unakkuthan Sindikka Nodi Unaku Than Sirikum Nadhi Unakkuthan Vazhiyum Echil Vaayoram Enathu Kaayam Aarum En Thangam Munnadi En Kaal Kadanaadi Un Aasai Ennadi Naan Nadathi Vaippen Vazhnthaalum Tharai Vezhndhaalum Un Kaalgal En Nenjil Vaazhathu Thene Va Pathu Viral Koolam Poda Poomi Mela Molachcha Chittrame Un Asaiva Pathu Pathu Aayul Koodum Enakku Punnagaiyil Kaalam Poga Thokaiyaaga Siricha Pettakame Yaarukkaavalam Maari Poschu Kanakku En Kooda Pesura Thodaadova Unakku Naerula Kattattuma Chinnukku Pidichu Ella Inipum Saapidu Tharattuma Andha Aruvi Pol Anba Tharuvale Chinna Arivipum Indri Suduvaale Aiyo Thummidudi Thummidudi Aayischu Nooraaga Ennul Unnodu Pathir Shottaga En Paarvai Unnodu Un Pommai Kannodu Pesamal Vinodu Naam Mithandhu Povom Kaathoram Adi Aalolam Naan Thanga Maarodu Va Vitudhu Thene Va Read Full Lyrics at iLyricsHub: https://www.ilyricshub.com/unakku-thaan-chithha-tamil/ ";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

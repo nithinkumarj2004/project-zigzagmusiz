@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title> SUMMERTIME SADNESS</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : SUMMERTIME SADNESS <br>
+            Album: Born to die <br>
+            Artist: LANA DEL REY
+
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TdrL3QxjyVw?si=81LmPtIXJL83Ovj_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML="Kiss me hard before you go Summertime sadness I just wanted you to know That baby, you the best I got my red dress on tonight Dancin' in the dark, in the pale moonlight Done my hair up real big, beauty queen style High heels off, I'm feelin' alive Oh, my God, I feel it in the air Telephone wires above are sizzlin' like a snare Honey, I'm on fire, I feel it everywhere Nothin' scares me anymore (One, two, three, four) Kiss me hard before you go Summertime sadness I just wanted you to know That baby, you the best I got that summertime, summertime sadness Su-su-summertime, summertime sadness Got that summertime, summertime sadness Oh, oh-oh, oh-oh I'm feelin' electric tonight Cruisin' down the coast, goin' about 99 Got my bad baby by my heavenly side I know if I go, I'll die happy tonight Oh, my God, I feel it in the air Telephone wires above are sizzlin' like a snare Honey, I'm on fire, I feel it everywhere Nothin' scares me anymore (One, two, three, four) Kiss me hard before you go Summertime sadness I just wanted you to know That baby, you the best I got that summertime, summertime sadness Su-su-summertime, summertime sadness Got that summertime, summertime sadness Oh, oh-oh, oh-oh Think I'll miss you forever Like the stars miss the sun in the morning sky Later's better than never Even if you're gone, I'm gonna drive (drive), drive I got that summertime, summertime sadness Su-su-summertime, summertime sadness Got that summertime, summertime sadness Oh, oh-oh, oh-oh Kiss me hard before you go Summertime sadness I just wanted you to know That baby, you the best I got that summertime, summertime sadness Su-su-summertime, summertime sadness Got that summertime, summertime sadness Oh, oh-oh, oh-oh ";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>BOY WITH LUV</title>
+        <link rel="stylesheet" href="/css/song_style.css">
+    </head>
+    <body>
+        <div>
+            
+
+        <div class="header">
+            <h1><a href="/index.html">ZIG ZAG MUSIZ</a></h1>
+        </div>
+
+        <form autocomplete="off" method="post" action="/redirect.php">
+            <h3 align="center">ENTER SONG NAME:</h3> 
+            <div class="search" align="center">
+               
+                <br>
+                <input type="text" id="input" class="search_box" name="search_value">
+                <input type="submit" value="search">
+            </div>
+            <ul class="list"></ul>
+            
+            <form>
+                <div class="lang_button" align="center">
+                    <button class="lang-button" onclick="{
+                        open_window_eng();
+                    }">ENGLISH</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tel();
+                    }">TELUGU</button>
+                    <button class="lang-button" onclick="{
+                        open_window_tam();
+                    }">TAMIL</button>
+                    <button class="lang-button" onclick="{
+                        open_window_hin();
+                    }">HINDI</button>
+                    <button class="lang-button" onclick="{
+                        open_window_bts();
+                    }">BTS</button>
+                </div>
+            
+            </form>
+        </form>
+
+
+
+        <div class="content">
+            SONG NAME : BOY WITH LUV <br>
+            SONG by BTS
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XsX3ATc3FbA?si=Gtuyuuol0ENO6Hc1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lyrics">
+            <button class="lyrics_button"  onclick="Do()" id="btn">Lyrics</button><br>
+        </div>
+        <div class="lyrics_content">
+            <p id="song_lyrics" class="lyrics_para"> 
+            </p>
+        </div>
+    </div>
+    
+
+       <script>
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("song_lyrics");
+   
+   
+         function Do(){
+            document.getElementById("song_lyrics").innerHTML="Modeun ge gunggeumhae How's your day Oh tell me (oh yah oh yah, oh yah oh yah) Mwoga neol haengbokhage haneunji Oh text me (oh yah oh yah, oh yah oh yah) Your every picture Nae meorimate dugo sipeo Oh bae Come be my teacher Ne modeun geol da gareuchyeojwo Your 1, your 2 Listen my my baby naneun Jeo haneureul nopi nalgo isseo Geuttae niga naege jwossdeon du nalgaero Ije yeogin neomu nopa Nan nae nune neol majchugo sipeo Yeah you makin' me a boy with luv Oh my my my, oh my my my I've waited all my life Ne jeonbureul hamkkehago sipeo Oh my my my, oh my my my Looking for something right Ije jogeumeun na algesseo I want something stronger Than a moment Than a moment love I have waited longer For a boy with For a boy with luv Neol alge doen ihu ya Nae salmeun ontong neo ya Sasohan ge sasohaji anhge Mandeureobeorin neoraneun byeol Hanabuteo yeolkkaji modeun ge teukbyeolhaji Neoui gwansimsa georeumgeori maltuwa Sasohan jageun seupgwandeulkkaji (Hope World!) Da malhaji neomu jakdeon Naega yeongungi doen georago (Oh nah) Nan malhaji unmyeong ttawin Cheoeumbuteo nae ge anieossdago (Oh nah) Segyeui pyeonghwa (No way) Geodaehan jilseo (No way) Geujeo neol jikil geoya nan Boy with luv Listen my my baby naneun Jeo haneureul nopi nalgo isseo Geuttae niga naege jwossdeon du nalgaero Ije yeogin neomu nopa Nan nae nune neol majchugo sipeo Yeah you makin' me a boy with luv Oh my my my, oh my my my You got me high so fast Ne jeonbureul hamkkehago sipeo Oh my my my, oh my my my You got me fly so fast Ije jogeumeun na algesseo Love is nothing stronger (I want it) Than a boy with, than a boy with luv Love is nothing stronger Than a boy with, than a boy with luv Tuk kkanohgo malhalge Nado moreuge himi deureogagido haesseo Nopabeorin sky Keojyeobeorin hall Ttaeron domangchige haedallamyeo gidohaesseo But neoui sangcheoneun naui sangcheo Kkaedarasseul ttae na dajimhaessdeongeol Niga jun ikaruseuui nalgaero Taeyangi anin neoegero Let me fly Oh my my my, oh my my my I've waited all my life Ne jeonbureul hamkkehago sipeo Oh my my my, oh my my my Looking for something right Ije jogeumeun na algesseo I want something stronger Than a moment, than a moment love Love is nothing stronger Than a boy with, than a boy with luv ";
+         }
+       </script>
+        <script src="/js/search_value.js">
+        </script>
+        <script src="/js/lang_button.js"></script>
+    </body>
+</html>
